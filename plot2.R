@@ -6,5 +6,5 @@ dataset$Date<-as.Date(dataset$Date,"%d/%m/%Y")
 sdataset<-subset(dataset, Date>="2007-02-01" & Date<="2007-02-02")
 #Creating the plot
 png("plot2.png")
-plot(sdataset$Global_active_power, type="l")
+plot(sdataset$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xaxt="n")
 dev.off()
